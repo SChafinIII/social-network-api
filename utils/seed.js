@@ -1,4 +1,4 @@
-const connection = require('../config/connect');
+const connection = require('../config/connection');
 const { User, Thought } = require('../models');
 const { Types } = require('mongoose');
 
