@@ -1,0 +1,31 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "Mongooseproject - Develop",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "seed": "node utils/seed",
+    "heroku-postbuild": "node utils/seed.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.4",
+    "mongoose": "^7.0.2",
+    "node": "^20.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SChafinIII/social-network-api.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/SChafinIII/social-network-api/issues"
+  },
+  "homepage": "https://github.com/SChafinIII/social-network-api#readme"
+}

@@ -2,23 +2,23 @@ const express = require('express');
 const router = express.Router();
 
 const {
-  getAllThoughts,
-  getSingleThought,
+  getThoughts,
+  getThoughtById,
   createThought,
   updateThought,
   deleteThought,
   createReaction,
   deleteReaction,
-} = require('../../controllers/thoughtController');
+} = require('../../controllers/controlThought.js');
 
 // Routes for getting and creating thoughts
 router.route('/thoughts')
-  .get(getAllThoughts)
+  .get(getThoughts)
   .post(createThought);
 
 // Routes for getting, updating, and deleting a single thought
 router.route('/thoughts/:id')
-  .get(getSingleThought)
+  .get(getThoughtById)
   .put(updateThought)
   .delete(deleteThought);
 
